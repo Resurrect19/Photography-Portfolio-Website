@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+:root{
+    /* ------------colors-------------- */
+    --light-black: rgba(0, 0, 0, 0.61);
+    --sky-blue: #B2EbF2;
+    --purple: #D1C4E9;
+    --red: #ef9a9a;
+    --light-peacock: #b2dfdb;
+    --yellow: #fff9c4;
+    --orange: #ffe0b2;
+    --grey: #757575;
+    --black: #000000;
+    --light-white: #eeeeee;
+    --dark-blue: #2c3d8f;
+    
+/* -----------styles-------------- */
+    --border-radius: 1.3rem;
+    --transition: all .2s linear;
+    --padding: .8rem 1rem;
+    --box-shadow: .5rem 0.5rem .5rem var(--grey);
+}
+
+::selection{
+    background-color: var(--sky-blue);
+    color: var(--black);
+}
