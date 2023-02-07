@@ -4,13 +4,21 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    border: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
 
 }
 :root{
+
+    /* -------------primary color------------ */
+    --purple: #c5b3e5;
+    --dark-purple: #36175e;
+
     /* ------------colors-------------- */
     --light-black: rgba(0, 0, 0, 0.61);
     --sky-blue: #B2EbF2;
-    --purple: #D1C4E9;
+
     --red: #ef9a9a;
     --light-peacock: #b2dfdb;
     --yellow: #fff9c4;
@@ -22,12 +30,106 @@
     
 /* -----------styles-------------- */
     --border-radius: 1.3rem;
-    --transition: all .2s linear;
+    --transition: all 300ms linear;
     --padding: .8rem 1rem;
-    --box-shadow: .5rem 0.5rem .5rem var(--grey);
+    --box-shadow: .2rem 0.2rem .2rem var(--grey);
+    --container-width-lg: 88%;
+    --container-width-md: 92%;
 }
 
 ::selection{
     background-color: var(--sky-blue);
     color: var(--black);
+}
+.window-onscroll{
+    box-shadow: .5rem .5rem .5rem var(--light-black);
+    border-radius: var(--border-radius);
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--purple);
+    color: var(--black);
+   
+}
+h1, h2{
+    font-weight: 400;
+    line-height: 1.1;
+}
+h1{
+    color: var(--light-black);
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.5rem;
+}
+a{
+    color: var(--dark-purple);
+    transition: var(--transition);
+}
+
+.container{
+    width: var(--container-width-lg);
+    margin: 0 auto;
+    max-width: 100vw;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+nav{
+    /* background-color: var(--dark-purple); */
+    height: 5rem;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+.nav_container{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-btn{
+    display: none;
+}
+.logo{
+    font-size: 2rem;
+    color: var(--dark-purple);
+    font-family: 600;
+    letter-spacing: 2px;
+    text-shadow: .2rem .2rem .2rem var(--light-black);
+    width: 8rem;
+}
+.nav_links{
+    display: flex;
+    gap: 4rem;
+    font-size: 1.2rem;
+    font-family: 700;
+}
+.social_link{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+.social_link a{
+    background: linear-gradient(var(--orange) ,var(--red));
+    padding: .1rem .5rem;
+    border-radius: .5rem
+}
+.nav_links a:hover
+{
+
+    color: var(--yellow);
+}
+.social_link a:hover {
+    color: var(--yellow);
+    box-shadow: var(--box-shadow);
 }
