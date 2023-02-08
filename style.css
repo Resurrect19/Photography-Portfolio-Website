@@ -29,7 +29,7 @@
     --dark-blue: #2c3d8f;
     
 /* -----------styles-------------- */
-    --border-radius: 1.3rem;
+    --border-radius: 1rem;
     --transition: all 300ms linear;
     --padding: .8rem 1rem;
     --box-shadow: .2rem 0.2rem .2rem var(--grey);
@@ -43,7 +43,8 @@
 }
 .window-onscroll{
     box-shadow: .5rem .5rem .5rem var(--light-black);
-    border-radius: var(--border-radius);
+    border-radius: 0rem 0rem 2rem 2rem;
+    background-color: var(--purple);
 }
 html{
     scroll-behavior: smooth;
@@ -51,7 +52,7 @@ html{
 body{
     background-color: var(--purple);
     color: var(--black);
-   
+    overflow-x: hidden;
 }
 h1, h2{
     font-weight: 400;
@@ -132,4 +133,82 @@ nav{
 .social_link a:hover {
     color: var(--yellow);
     box-shadow: var(--box-shadow);
+}
+header{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background: linear-gradient(var(--purple), var(--dark-purple));
+    position: relative;
+    overflow: hidden;
+}
+.header_container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10rem;
+    margin-top: 10rem;
+    position: relative;
+}
+.header-image-bg{
+    position: absolute;
+    width: 16rem;
+    height: 22rem;
+    background-color: var(--dark-purple);
+    border-radius: var(--border-radius);
+}
+.header-image-lg{
+    position: relative;
+    top: .8rem;
+    left: .8rem;
+    width: 29rem;
+    border-radius: var(--border-radius);
+    filter: saturate(0) brightness(0.5);
+    
+}
+.header-image-lg img{
+    border-radius: var(--border-radius);
+   
+}
+.header-image-sm{
+    position: absolute;
+    top: 6rem;
+    left: 5rem;
+    overflow: hidden;
+    width: 28rem;
+    height: 28rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+.header_left:hover .header-image-sm{
+    opacity: 0;
+}
+.header_left:hover .header-image-lg{
+    filter: saturate(1) brightness(1);
+    top: 0;
+    left: 0;
+    border: .7rem solid var(--yellow);
+}
+.header_left:hover .header-image-lg img{
+    border-radius: 0;
+}
+.header-head{
+    display: flex;
+    gap: 2rem;
+}
+.empty{
+    height: 3rem;
+    width: 18rem;
+    margin-bottom: 3.5rem;
+    background-color: var(--purple);
+    border-radius: 2rem;
+    box-shadow: inset 0 1rem .5rem var(--light-black);
+}
+.header-tag{
+    color: var(--orange);
+    font-size: 1.2rem;
+}
+.header_right p{
+    width: 85%;
+    margin-top: 2rem;
+    color: var(--black);
 }
