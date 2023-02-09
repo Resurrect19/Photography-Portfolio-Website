@@ -212,3 +212,62 @@ header{
     margin-top: 2rem;
     color: var(--black);
 }
+.header_frames{
+    position: absolute;
+    top: 88vh;
+    right: 48rem;
+    transition: var(--transition);
+}
+.header_frame{
+    width: 14rem;
+    position: absolute;
+    border: .5rem solid var(--purple);
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 4rem var(--light-black);
+    transform: rotate(-10deg);
+    transform-origin: bottom left;
+    transition: var(--transition);
+}
+.header_frame:nth-child(2){
+    transform: rotate(15deg);
+    top: -1.5rem;
+    left: 4rem;
+}
+.header_frames:hover .header_frame{
+    transform: rotate(0);
+    
+}
+.header_frames:hover .header_frame:nth-child(2){
+    top: 0;
+    left: 15rem;
+}
+.contact_btn{
+    display: grid;
+    place-items: center;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: var(--transition);
+    color: var(--dark-purple);
+}
+.header_btn{
+    background: linear-gradient(var(--orange) , var(--red));
+    position: absolute;
+    right: 4rem;
+    bottom: -3rem;
+}
+.header_btn:hover{
+    transform: translateY(-1rem);
+    box-shadow: 0 0 2rem var(--light-black);
+
+}
+.contact_btn p{
+    font-size: 1rem;
+    font-weight: 600;
+    width: 7rem;
+    height: 4rem;
+    position: absolute;
+    text-align: center;
+}
+
