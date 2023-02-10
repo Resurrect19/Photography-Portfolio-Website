@@ -268,6 +268,7 @@ header{
     width: 7rem;
     height: 4rem;
     position: absolute;
-    text-align: center;
+    /* text-align: center; */
+    transform-origin: 0.3rem 5rem;
 }
 

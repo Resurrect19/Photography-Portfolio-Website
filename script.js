@@ -7,3 +7,13 @@ window.onscroll = () => {
         header.classList.remove('window-onscroll');
     } 
 }
+
+
+//carousel rotate of email
+const textButtons = document.querySelectorAll('.contact_btn');
+
+textButtons.forEach(textButton => {
+    let text = textButton.querySelector('p');
+
+    text.innerHTML =text.innerHTML.split('').map((character, index) => `<span style= "transform: rotatex(${index * 12}deg)">${character}</span> `).join('');
+})
