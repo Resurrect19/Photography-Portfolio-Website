@@ -9,6 +9,8 @@
     <script src="https://kit.fontawesome.com/3d4bd2647f.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Crimson+Pro:wght@300&family=Lato:ital,wght@0,300;0,900;1,400&family=Montserrat:wght@500;700&family=Prata&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -104,6 +106,64 @@
 
 
 
+
+    
+    <!-- ---------------------------Gallery-------------------------- -->
+
+    <section id="gallery">
+        <div class="container gallery_container">
+            <div class="gallery_head">
+                <h2 class="gallery_title">My Gallary</h2>
+                <div class="empty header-empty"></div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime facere explicabo tempore, laborum aut iste architecto quasi dicta natus minima cumque. At explicabo consectetur excepturi vel a dolore nam minima! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ipsam voluptatibus voluptates? Magnam suscipit nostrum neque, pariatur voluptates fugiat, sed alias reprehenderit, doloremque voluptas natus quod aliquid temporibus excepturi. Non.
+            </p>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <article class="swiper-slide">
+                        <img src="images/pexels-evgeny-tchebotarev-2187605.jpg" alt="">
+                    </article>
+                    <article class="swiper-slide">
+                        <img src="images/pexels-evgeny-tchebotarev-2187661.jpg" alt="">
+                    </article>
+                    <article class="swiper-slide">
+                        <img src="images/pexels-george-desipris-792381.jpg" alt="">
+                    </article>
+                    <article class="swiper-slide">
+                        <img src="images/pexels-ike-louie-natividad-3229334.jpg" alt="">
+                    </article>
+                    <article class="swiper-slide">
+                        <img src="images/pexels-jeric-delos-angeles-3049508.jpg" alt="">
+                    </article>
+                    <article class="swiper-slide">
+                        <img src="images/pexels-jose-musa-8980243.jpg" alt="">
+                    </article>
+                    <article class="swiper-slide">
+                        <img src="images/pexels-liger-pham-1108701.jpg" alt="">
+                    </article>
+                    <article class="swiper-slide">
+                        <img src="images/pexels-vicky-tran-2781540.jpg" alt="">
+                    </article>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            
+        </div>
+    </section>
+
+
+<!-- ---------------------------Gallery-------------------------- -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
 </body>
 </html>

@@ -17,3 +17,5 @@ textButtons.forEach(textButton => {
 
     text.innerHTML =text.innerHTML.split('').map((character, index) => `<span style= "transform: rotatex(${index * 12}deg)">${character}</span> `).join('');
 })
+
+

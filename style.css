@@ -349,3 +349,40 @@ header{
 .about_right p{
     margin-bottom: 0.9rem;
 }
+
+
+/* -------------------Gallary---------------------- */
+#gallery{
+    margin-top: 10rem;
+}
+.gallery_head{
+    display: flex;
+    justify-content: space-between;
+}
+.gallery_container p{
+    width: 45rem;
+}
+.swiper-wrapper{
+    margin-top: 5rem;
+    height: 37rem;
+    width: fit-content;
+    padding-bottom: 5rem;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 36rem;
+    overflow: hidden;
+    transition: var(--transition);
+  }
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
