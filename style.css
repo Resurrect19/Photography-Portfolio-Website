@@ -365,7 +365,7 @@ header{
 .swiper-wrapper{
     margin-top: 5rem;
     height: 37rem;
-    width: fit-content;
+    
     padding-bottom: 5rem;
 }
 
@@ -376,13 +376,24 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    max-height: 36rem;
+    border: .5rem solid var(--grey);
     overflow: hidden;
-    transition: var(--transition);
+    
   }
 .swiper-slide img {
     display: block;
     width: 100%;
     object-fit: cover;
-    height: 100%;
+    height: 30rem;
+    filter: saturate(0);
+    transition: all .3s ease;
+  }
+  .swiper-slide:hover{
+    box-shadow: .5rem .5rem 1rem var(--light-black);
+  }
+  .swiper-slide:hover img{
+    filter: saturate(1);
+  }
+  .swiper-pagination-bullet {
+    background-color: var(--dark-purple);
   }
