@@ -438,3 +438,27 @@ header{
   .exhibition_gallery article img{
     height: 100%;
   }
+  footer{
+    margin-top: 5rem;
+    
+  }
+  .footer_container{
+    border-top: .1rem solid var(--dark-purple);
+    padding-top: 4rem;
+    
+  }
+  .footer_head{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: var(--dark-purple);
+    text-transform: capitalize;
+
+  }
+  .footer_links{
+    margin: 3rem 0 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40rem;
+  }
