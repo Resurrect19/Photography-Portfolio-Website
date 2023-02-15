@@ -19,3 +19,28 @@ textButtons.forEach(textButton => {
 })
 
 
+// ----------------------Menu-btn-----------------------
+const nav = document.querySelector('.nav_links');
+const OpenBtn = document.querySelector('#btn-open');
+const CloseBtn = document.querySelector('#btn-close');
+
+
+const openNav = () => {
+    nav.style.display = 'flex';
+    OpenBtn.style.display = 'none';
+    CloseBtn.style.display = 'inline-block';
+}
+
+OpenBtn.addEventListener('click', openNav);
+
+const closeNav = () => {
+    nav.style.display = 'none';
+    OpenBtn.style.display = 'inline-block';
+    CloseBtn.style.display = 'none';
+}
+
+CloseBtn.addEventListener('click', closeNav);
+
+nav.querySelectorAll('li a').forEach(navLink => {
+    navLink.addEventListener('click', closeNav);
+})
