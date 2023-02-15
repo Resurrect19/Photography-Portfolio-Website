@@ -570,5 +570,122 @@ header{
     }
 
     /* -----------------------about------------------------- */
-    
+    .about_container{
+        grid-template-columns: 40% 54%;
+        gap: 6%;
+        margin-top: 0;
+    }
+    .about_image-bg, .about_image-sm{
+        display: none;
+    }
+    .about_image-lg{
+        top: 0;
+        left: 0;
+        filter: saturate(1) brightness(1);
+    }
+    .about_right{
+        margin: 0;
+    }
+    .about_right p{
+        margin-bottom: 1rem;
+    }
+    #gallery{
+        margin-top: 8rem;
+    }
+    .gallery_container p{
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .swiper-wrapper{
+        margin-top: 4rem;
+        height: fit-content;
+    }
+    .exhibition_head > p{
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .exhibition_gallery{
+        margin-top: 3rem;
+        gap: 1rem;
+    }
+    .exhibition_gallery article{
+        border: none;
+    }
+}
+
+@media (max-width: 600px){
+    h1, h2{
+        font-size: 2rem;
+        line-height: 1.3;
+        
+    }
+    header{
+        padding: 0;
+        padding-bottom: 6rem;
+    }
+    .header_container{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        text-align: center;
+        margin-top: 6rem;
+    }
+    .header_image-lg{
+        width: 80%;
+        height: 15rem;
+        margin: 0 auto;
+        margin-top: 7rem;
+        overflow: hidden;
+        border-radius: 15rem 15rem 0 0 ;
+    }
+    .header_head{
+        justify-content: center;
+    }
+    .header_right p{
+        margin-top: 1rem;
+    }
+    .header_title{
+        margin-top: 1rem;
+    }
+
+    .about_container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .about_right p{
+        width: 100%;
+    }
+    .swiper-slide{
+        border: 0;
+    }
+
+    #gallery{
+        margin-top: 6rem;
+    }
+    .gallery_container p{
+        margin-top: 1rem;
+    }
+    .swiper-wrapper{
+        margin-top: 3rem;
+    }
+    #exhibiton{
+        margin-top: 1rem;
+    }
+    .exhibition_gallery{
+        display: block;
+    }
+    .exhibition_gallery article{
+        height: fit-content;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .footer_head{
+        flex-direction: column;
+    }
+    .footer_head h2{
+        font-size: 1.5rem;
+    }
+    .footer_links{
+        flex-direction: column;
+       width: 100%;
+    }
 }
